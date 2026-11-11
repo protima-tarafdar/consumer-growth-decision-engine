@@ -1,0 +1,17 @@
+{
+  "n_test": 12000,
+  "value_per_order": 12.0,
+  "segment_rule": {
+    "Active": "none",
+    "At Risk": "$3 off",
+    "Lapsed": "$3 off",
+    "New": "$5 off"
+  },
+  "agreement_with_ceiling": 0.5163333333333333,
+  "offer_mix": {
+    "$3 off": 0.355,
+    "none": 0.312,
+    "$5 off": 0.308,
+    "$8 off": 0.026
+  }
+}

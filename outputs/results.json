@@ -1,0 +1,55 @@
+{
+  "experiment": {
+    "n_control": 7409,
+    "n_treatment": 7591,
+    "control_rate": 0.05533810230800378,
+    "treatment_rate": 0.12554340666578842,
+    "lift_pp": 7.020530435778463,
+    "ci95_pp": [
+      6.1113380885490916,
+      7.929722783007835
+    ],
+    "z": 15.134574874126551,
+    "incremental_conversions": 532.9284653799432,
+    "wasted_share": 0.4407885987618643,
+    "incremental_value": 39825.25998515319,
+    "discount_cost": 4765.0,
+    "net_value": 35060.25998515319,
+    "roi_revenue_based": 7.3578719800951085
+  },
+  "heldout": {
+    "n_test": 3751,
+    "auc": {
+      "control": 0.7121497919556171,
+      "treatment": 0.6086235699098916
+    },
+    "spearman_decile_vs_observed": -0.8909090909090909,
+    "mean_predicted_control_prob": 0.05430310257803592,
+    "observed_control_rate": 0.05558553696708041,
+    "top30_minus_rest_ci95_pp": [
+      3.525426167746311,
+      10.7983171579229
+    ],
+    "top30_lift_pp": 11.960132890365447,
+    "top30_ci95_pp": [
+      8.862445683892162,
+      15.056976281782575
+    ],
+    "rest_lift_pp": 4.84046463072355,
+    "rest_ci95_pp": [
+      2.483225906850196,
+      6.948242052727211
+    ],
+    "top10_segment_mix": {
+      "At Risk": 0.915,
+      "Lapsed": 0.064,
+      "New": 0.021
+    },
+    "top30_segment_mix": {
+      "At Risk": 0.428,
+      "Lapsed": 0.405,
+      "New": 0.156,
+      "Active": 0.011
+    }
+  }
+}
