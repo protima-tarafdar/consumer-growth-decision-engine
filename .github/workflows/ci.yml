@@ -1,0 +1,18 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python src/train.py
+      - run: python src/evaluate.py
+      - run: python src/run_engine.py --input data/sample_customer_input.csv --output outputs/decision_output.csv --budget 25
+      - run: python src/multi_offer.py
+      - run: python src/run_multi_offer.py --input data/sample_customer_input.csv --output outputs/multi_offer_decisions.csv --budget 100
+      - run: python -m unittest discover -s tests -v
